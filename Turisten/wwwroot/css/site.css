@@ -1,9 +1,77 @@
+:root {
+    --primaryColor: rgb(255, 106, 0)
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    max-width: 100%;     
+}
+
+.container img {
+    vertical-align: middle;
+}
+
+.container .content {
+        position: absolute;
+        top: 30%;
+        color: white;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+button {
+    border-radius: 7px;
+    background-color: white;
+    font-weight:500;
+    width: 30%;
+    margin-top: 5%;
+    border: 0;
+}
 
 body {
   margin: 0;
 }
-
+    
 #logo {
     width: 5%;
     margin-left: 2%;
+    float: left;
 }
+
+header {
+    float: left;
+    width: 100vw;
+    background-color: var(--primaryColor);
+}
+
+#headerText {
+    float: left;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    color: white;
+    font-weight: 900;
+    font-size:larger;
+}
+
+.bodyImage {
+     width: 100vw;
+}
+
+.map {
+    content: "\f041";
+}
+
+
