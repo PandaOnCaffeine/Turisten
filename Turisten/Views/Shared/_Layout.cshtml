@@ -10,24 +10,23 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="../pictures/Pizza.png" id="logo" />
-            <p id="headerText">MENU</p>
-            <p id="headerText">INFO</p>
+        <nav>         
+            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="../pictures/Pizza.png" id="logo"></a>
+            <a id="headerText" asp-area="" asp-controller="Home" asp-action="Menu">MENU</a>
+            <a id="headerText" asp-area="" asp-controller="Home" asp-action="Info">INFO</a>
         </nav>
     </header>
     <div class="container">        
-        <img src="../pictures/PizzaBody.png" class="bodyImage"/>
         <div class="content">
             <h1>Turisten Pizzaria</h1>
             <h6><i class="map"></i>Adelgade 5, Nysted - 4880</h6>
-            <button>Find os</button>
-            </div>
-        @RenderBody()        
+            <button>Find os</button>            
+        </div>
+            @RenderBody()   
     </div>
 
-    <footer>
-       
+    <footer id="footer">
+               <p class="copyright">©2022 Turisten Pizzaria.</p>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
