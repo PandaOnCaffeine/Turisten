@@ -122,7 +122,7 @@ p {
 }
 
 .menu {
-    border-buttom: 1px;
+    border-bottom: solid 1px;
 }
 .boxStyle {
     display: none;
