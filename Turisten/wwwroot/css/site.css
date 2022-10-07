@@ -99,4 +99,24 @@ p {
 .menu {
     border-bottom: solid 1px;
     border-block-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuText {
+    margin: .5vw;
+    width: 20vw;
+}
+
+.menuPrice {
+    color: black;
+    font-size: large;
+    margin: 1.5vh;
+}
+
+.menuButton {
+    height: 1cm;
+    width: 1cm;
+    margin: 2vh;
+
 }
