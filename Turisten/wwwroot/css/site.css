@@ -96,7 +96,7 @@ p {
     opacity: 80%;
 }
 
-.menu {
+.menuBox {
     border-bottom: solid 1px;
     border-block-color: white;
     display: flex;
