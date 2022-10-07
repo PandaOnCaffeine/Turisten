@@ -1,18 +1,102 @@
-html {
-  font-size: 14px;
+:root {
+    --primaryColor: rgb(255, 106, 0)
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+* {
+    scroll-behavior: smooth;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+        margin-top: 200px;
+        color: white;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+}
+
+button {
+    border-radius: 7px;
+    background-color: white;
+    font-weight:500;
+    width: 80px;
+    margin-top: 5%;
+    border: 0;
 }
 
 body {
-  margin-bottom: 60px;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+    
+#logo {
+    width: 5%;
+    margin-left: 2%;
+    float: left;
+}
+
+header {
+    float: left;
+    width: 100vw;
+    background-color: var(--primaryColor);
+}
+
+#headerText {
+    float: left;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    color: white;
+    font-weight: 900;
+    font-size:larger;
+    text-decoration: none;
+}
+
+html, body {
+    background: url("../pictures/PizzaBody.png") no-repeat center center fixed;
+    background-size: cover;
+    overflow: scroll;
+    z-index: -1;
+}   
+
+#footer {
+    background-color: black;
+    opacity: 60%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    padding-bottom: 2.5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Box {
+    background-color: var(--primaryColor);
+    width: 70%;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 15%;
+    color: white;
+}
+
+.topping-text {
+    opacity: 80%;
+}
+
+.menu {
+    border-bottom: solid 1px;
+    border-block-color: white;
 }

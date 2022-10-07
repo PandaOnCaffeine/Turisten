@@ -17,8 +17,12 @@ namespace Turisten.Controllers
         {
             return View();
         }
+        public IActionResult Menu()
+        {
+            return View();
+        }
 
-        public IActionResult Privacy()
+        public IActionResult Info()
         {
             return View();
         }
