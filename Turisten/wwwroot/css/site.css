@@ -124,12 +124,12 @@ p {
 .menu {
     border-bottom: solid 1px;
 }
+
 .boxStyle {
     display: none;
 }
 
 .boxStyle:target {
-    display: block;
     position: absolute;
     background-color: var(--primaryColor);
     width: 70%;
