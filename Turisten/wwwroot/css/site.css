@@ -101,6 +101,7 @@ p {
     border-block-color: white;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .menuText {
@@ -115,10 +116,17 @@ p {
 }
 
 .menuButton {
+    background-color: white;
     height: 1cm;
     width: 1cm;
     margin: 2vh;
-
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    line-height: 3.5vh;
+    -webkit-text-stroke-width: medium;
+    color: black;
 }
 
 .menu {

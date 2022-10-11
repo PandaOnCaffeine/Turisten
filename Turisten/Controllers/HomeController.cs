@@ -22,6 +22,13 @@ namespace Turisten.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult MenuTest(string name)
+        {
+            ViewBag.Message = string.Format("Hello");
+            return View();
+        }
+
         public IActionResult Info()
         {
             return View();
