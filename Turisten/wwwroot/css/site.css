@@ -177,3 +177,12 @@ p {
     padding: 12px 20px 12px 45px;
     border: 1px solid#808080;
 }
+
+#orderBox {
+    box-shadow: 0 0 0 1600px rgba(0,0,0,0.40);
+    z-index: 5;
+    position: absolute;
+    margin-bottom: auto;
+    transform: translate(0%, -50%);
+    margin: 0;
+}
