@@ -5,6 +5,9 @@
 <body>
     <main>
         <div class="Box">
+            <div class="menuBox">
+                <input type="text" id="searchbar" name="txt" onchange="Search(this.value)" placeholder="Søg efter ingredienser.." />
+            </div>
             <div class="menuBox" onclick="test()">
                 <div class="menuText">
                     <h4>1. MARGHERITA</h4>
@@ -238,8 +241,13 @@
         </div>
         <script type="text/javascript">
             function test() {
-                alert("@ViewBag.Message");
+                alert("Test");
             };
+        </script>
+        <script type="text/javascript">           
+            function Search(val) {
+                alert(val);
+            }            
         </script>
     </main>
 </body>

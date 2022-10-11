@@ -107,6 +107,7 @@ p {
 .menuText {
     margin: .5vw;
     width: 20vw;
+    display: block;
 }
 
 .menuPrice {
@@ -166,3 +167,13 @@ p {
     transform: translate(0%, -50%);
 }
 
+#searchbar {
+    background-image: url("../pictures/SearchIcon.png");
+    background-position: 15px 16px;
+    background-repeat: no-repeat;
+    background-size: 2%;
+    margin: .5vw;
+    width: 100%;
+    padding: 12px 20px 12px 45px;
+    border: 1px solid#808080;
+}
