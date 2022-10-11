@@ -1,12 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Turisten Pizzaria - menu";
 }
-
+<html>
 <body>
     <main>
         <div class="Box">
             <div class="menuBox">
-                <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Søg efter ingredienser.." />
+                    <input type="text" id="searchbar" name="txt" onchange="Test(this.value)" placeholder="Søg efter ingredienser.." />
             </div>
             <div class="menuBox">
                 <div class="menuText">
@@ -238,9 +238,13 @@
                 </div>
                 <button class="menuButton">+</button>
             </div>
+            </ul>
         </div>
-        <script>
-
+        <script type="text/javascript">           
+            function Test(val) {
+                alert(val);
+            }            
         </script>
     </main>
 </body>
+</html>

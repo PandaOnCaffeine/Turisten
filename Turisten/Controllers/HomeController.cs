@@ -17,6 +17,13 @@ namespace Turisten.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Index(string name)
+        {
+            ViewBag.Message = string.Format("Hello");
+            return View();
+        }
         public IActionResult Menu()
         {
             return View();
@@ -32,5 +39,6 @@ namespace Turisten.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
