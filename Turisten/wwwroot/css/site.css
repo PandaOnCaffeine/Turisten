@@ -130,8 +130,9 @@ p {
     color: black;
 }
 
-.menu {
+.infoHeader {
     border-bottom: solid 1px;
+    text-align: -webkit-center;
 }
 
 .boxStyle {
@@ -154,6 +155,7 @@ p {
 .mapText {
         display: flex; 
         justify-content: space-between;
+        border-bottom: solid 1px;
 }
 
 #exitButton {
@@ -176,4 +178,25 @@ p {
     width: 100%;
     padding: 12px 20px 12px 45px;
     border: 1px solid#808080;
+}
+
+#infoContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#openDates {
+    width: 33%;
+    text-align: -webkit-center;
+}
+
+#contacts {
+    width: 33%;
+    text-align: -webkit-center;
+}
+
+#delivery {
+    width: 34%;
+    text-align: -webkit-center;
 }
