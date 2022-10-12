@@ -4,19 +4,19 @@
 
 <body>
     <main id="test">
-        <div class="Box">
-            <div class="menuBox">
-                <input type="text" id="searchbar" name="txt" onchange="Search(this.value)" placeholder="Søg efter ingredienser.." />
+        <div class="Box"><!--we make a box for the menu-->
+            <div class="menuBox"><!--This creates a row for the search bar-->
+                <input type="text" id="searchbar" name="txt" onchange="Search(this.value)" placeholder="Søg efter ingredienser.." /><!--This input creates the search bar-->
             </div>
-            <div class="menuBox" onclick="Margherita()">
-                <div class="menuText">
-                    <h4>1. Margherita</h4>
-                    <h6 class="topping-text">Tomat og ost</h6>
+            <div class="menuBox" onclick="test()"><!--This div makes a row for our item and creates a method so when you click on the row and it runs a script-->
+                <div class="menuText"><!--This div is for the text in the row-->
+                    <h4>1. MARGHERITA</h4><!--Pizza name-->
+                    <h6 class="topping-text">Tomat og ost</h6><!--Pizza toppings-->
                 </div>
-                <div class="menuPrice">
-                    <h2>DKK 70,00</h2>
+                <div class="menuPrice"><!--Div for the menu price-->
+                    <h2>DKK 70,00</h2><!--The menu price-->
                 </div>
-                <a class="menuButton">+</a>
+                <a class="menuButton">+</a><!--anchor for our button-->
             </div>
             <div class="menuBox">
                 <div Class="menuText">
@@ -239,10 +239,14 @@
                 <a class="menuButton">+</a>
             </div>
         </div>
-        <script type="text/javascript" src="../js/OrderBox.js"></script>
-        <script type="text/javascript">           
-            function Search(val) {
-                alert(val);
+        <script type="text/javascript">//This is to tell the html that this is javascript 
+            function test() {//this creates a function called test for the menu items
+                alert("Test");//This creates an alert box, so when you trigger the function it says "Test"
+            };
+        </script>
+        <script type="text/javascript">//To tell the html it is javascript           
+            function Search(val) {//Creates a search function called Search, for the searchbar
+                alert(val);//This creates an alert box so when it is triggered it has the value that the user put in to the search bar
             }            
         </script>
     </main>

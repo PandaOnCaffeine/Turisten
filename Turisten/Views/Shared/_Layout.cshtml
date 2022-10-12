@@ -10,39 +10,40 @@
 </head>
 <body>
     <header>
-        <nav>         
-            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="../pictures/Pizza.png" id="logo"></a>
-            <a id="headerText" asp-area="" asp-controller="Home" asp-action="Menu">MENU</a>
-            <a id="headerText" asp-area="" asp-controller="Home" asp-action="Info">INFO</a>
+        <nav><!--This is our navigation bar-->    
+            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="../pictures/Pizza.png" id="logo"></a><!--This is the path to our logo and you will be redirected to the homepage if you click on it-->
+            <a id="headerText" asp-area="" asp-controller="Home" asp-action="Menu">MENU</a><!--This is the path to our menu tab, you will be redirected to the menu if you click on it-->
+            <a id="headerText" asp-area="" asp-controller="Home" asp-action="Info">INFO</a><!--This is the path to our info tab, you will be redirected to the info if you click on it-->
         </nav>
     </header>
     <div class="container"> 
-        <div id="Box" class="boxStyle">
+        <div id="Box" class="boxStyle"><!--This is the box for our map page, it is hidden until the udser clicks on the find os button-->
                 <form>
-                    <div class="mapText">
+                    <div class="mapText"><!--header for the map box-->
                     <h2>Turisten Pizzaria Location</h2>
-                    <button id="exitButton" onclick="hide()">X</button>
+                    <button id="exitButton" onclick="hide()">X</button><!--Exit button-->
                     </div>
+                    <!--iframe that shows the google maps location of the restaurant in the box-->
                     <br/><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.2447278684335!2d11.726567815840296!3d54.67012068027775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ad393874e39dc9%3A0xadae025e20a5241f!2sAdelgade%205%2C%204880%20Nysted!5e0!3m2!1sda!2sdk!4v1665126138818!5m2!1sda!2sdk" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </form>
             </div>
-        <div class="content">
+        <div class="content"><!--This div is for the content on the frontpage-->
             <h1>Turisten Pizzaria</h1>
             <h6>Adelgade 5, Nysted - 4880</h6>
-            <a href="#Box"><button onclick="hide()">Find os</button></a>
+            <a href="#Box"><button onclick="hide()">Find os</button></a><!--an anchot that refers to the box, and a function in the button-->
         </div>
             @RenderBody() 
     </div>
 
-    <footer id="footer">
-               <p class="copyright">©2022 Turisten Pizzaria.</p>
+    <footer id="footer"><!--footer in the bottom of the pages-->
+               <p class="copyright">©2022 Turisten Pizzaria.</p><!--Copyright-->
     </footer>
     <script>
-        function hide() {
-  var x = document.getElementById("Box");
-  if (x.style.display === "none") {
+        function hide() {//This creates a function for the exit button, we give it to both the open and close button
+  var x = document.getElementById("Box");//This collects the information for the box
+  if (x.style.display === "none") {//if the box is hidden, it will show the box
     x.style.display = "block";
-  } else {
+  } else {//If it is showing, it will hide the box
     x.style.display = "none";
   }
 }
@@ -52,7 +53,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
     <script>
-        onload = hide();
+        onload = hide();//when it loads the layout it runs itself once
     </script>
 </body>
 </html>
