@@ -226,3 +226,12 @@ p {
     width: 34%;
     text-align: -webkit-center;
 }
+=======
+#orderBox {
+    box-shadow: 0 0 0 1600px rgba(0,0,0,0.40);
+    z-index: 5;
+    position: absolute;
+    margin-bottom: auto;
+    transform: translate(0%, -50%);
+    margin: 0;
+}
